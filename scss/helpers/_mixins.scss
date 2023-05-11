@@ -1,0 +1,42 @@
+@use 'variables' as *;
+// Fonts:
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+
+@mixin fontHeading ($fSize, $lineHeig, $color) {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700px;
+  font-size: $fSize;
+  line-height: $lineHeig;
+  color: $color;
+}
+
+@mixin fontText ($fWeight, $fSize, $lineHeig, $color) {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: $fWeight;
+  font-size: $fSize;
+  line-height: $lineHeig;
+  color: $color;
+}
+
+@mixin button ($padding...) {
+  width: 180px;
+  padding: $padding;
+  border-radius: 50px;
+  box-shadow: $box-shadow-button;
+}
+
+@mixin d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin position__img {
+  position: absolute;
+  z-index: -1;
+}
+
+@mixin card__item {
+  border-radius: 50px;
+  max-width: 400px;
+}

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+  <!-- Header! -->
+  <header class="header">
+    <div class="container">
+      <div class="header__content">
+
+        <div class="logo_nav">
+          <svg class="logo__svg" xmlns="http://www.w3.org/2000/svg" width="45" height="36" fill="none">
+            <rect id="rect1" width="18.31" height="20" y="15.5" fill="#9C69E2" rx="9.155"/>
+            <rect id="rect2" width="18.31" height="35" x="26.549" y=".5" fill="#F063B8" rx="9.155"/>
+          </svg>
+
+          <!-- Navigation! -->
+          <nav class="nav" id="myTopnav">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a class="nav__link" href="http://">About</a></li>
+              <li class="nav__list-item"><a class="nav__link" href="http://">Help</a></li>
+              <li class="nav__list-item"><a class="nav__link" href="http://">Features</a></li>
+              <li class="nav__list-item"><a class="nav__link" href="http://">Sign Up</a></li>
+            </ul>
+            
+            <!-- Button JS! -->
+            <button onclick="myFunction()" class="burger-menu">
+              <span class="burger-menu__line"></span>
+              <span class="burger-menu__line"></span>
+              <span class="burger-menu__line"></span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Button Request! -->
+        <button class="btn--request">Request Demo <span class="arrow">&#8594;</span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main! -->
+  <main class="main">
+
+    <!-- Section-one! -->
+    <section class="section-first">
+      <div class="container">
+          <h1 class="heading-h1 animate__animated animate__fadeInLeft">Save your data storage here.</h1>
+
+          <!-- Box-content! -->
+          <div class="section-first__content">
+            <div class="section-first__box-text animate__animated animate__fadeInLeft">
+              <p class="description box-text__textWidth">Data Warehouse is a data storage area that has been tested for security, so you can store your data here safely but not be afraid of being stolen by others.</p>
+              <button class="btn--secondary marginButton">Learn more</button>
+            </div>
+            <div class="section-first__img-first animate__animated animate__fadeInRight">
+              <picture>
+                <source media="(min-width: 1170px)" srcset="img/main_photo/first_screen_img.png">
+                <source media="(min-width: 768px)" srcset="img/main_photo/first_screen_img@2x.png">
+                <source media="(min-width: 375px)" srcset="img/main_photo/first_screen_img@3x.png">
+                <img class="image-one" src="img/main_photo/first_screen_img.png" alt="illustration">
+              </picture>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section-second! -->
+    <section class="section-second">
+      <div class="container">
+        <div class="section-second__content">
+
+          <div class="section-second__img-second">
+            <picture>
+              <source media="(min-width: 1170px)" srcset="img/main_photo/second_main_img.png">
+                <source media="(min-width: 768px)" srcset="img/main_photo/second_main_img@2x.png">
+                <source media="(min-width: 375px)" srcset="img/main_photo/second_main_img@3x.png">
+                <img class="image-one" src="img/main_photo/second_main_img.png" alt="illustration-second">
+            </picture>
+          </div>
+
+          <div class="section-second__box-text">
+            <h2 class="heading-h2">We are a high-level data storage bank</h2>
+            <div class="box-text__paragraphers">
+              <p class="description box-text__paragraphers__marginBottom">The place to store various data that you can access at any time through the internet  and where you can carry it.</p>
+
+              <p class="description"> This very flexible storage area has a high level of security. To enter into your own data you must enter the password that you created when you registered in this Data Warehouse.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section-third! -->
+    <section class="section-third">
+      <div class="container">
+        <div class="section-third__heading-text">
+          <h2 class="heading-h2">Features</h2>
+          <p class="description">Some of the features and advantages that we provide for those of you who store data in this Data Warehouse.</p>
+        </div>
+
+        <div class="wrapper__cards">
+        
+          <!-- Card-one! -->
+          <div class="card--item">
+            
+            <img class="card-image" src="img/cards/card_one.png" alt="">
+            
+            <div class="card--item__content">
+              <div class="back-img-one"><img src="img/cards/vector_one.png" alt="Vector"></div>
+              <div class="back-img-one ellipse"><img src="img/cards/ellipse.png" alt="Vector"></div>
+              <h3 class="heading-h3">Search Data</h3>
+              <p class="card--description">Don’t worry if your data is very large, the Data Warehoue provides a search engine, which is useful for making it easier to find data effectively saving time.</p>
+              <a class="card--link marginLinkOne underline-one" href="">Learn more <span class="arrow">&#8594;</span></a>
+            </div>
+          </div>
+
+          <!-- Card-two! -->
+          <div class="card--item__color--two">
+            <img class="card-image__img-two" src="img/cards/card_second.png" alt="Photo">
+            <div class="card--item__content">
+              <div class="back-img-two"><img src="img/cards/vector_two.png" alt="Vector"></div>
+              <h3 class="heading-h3">24 Hours Access</h3>
+              <p class="card--description">Access is given 24 hours a full morning to night and meet again in the morning, giving you comfort when you need data when urgent.</p>
+              <a class="card--link marginLinkTwo underline-one" href="">Learn more <span class="arrow">&#8594;</span></a>
+            </div>
+          </div>
+        </div>
+
+          <div class="wrapper__cards">
+          <!-- Card-three! -->
+          <div class="card--item__color--three">
+            <img class="card-image" src="img/cards/card_third.png" alt="">
+            <div class="card--item__content">
+              <div class="back-img-three"><img src="img/cards/ellipse_two.png" alt="Vector"></div>
+              <h3 class="heading-h3">Print Out</h3>
+              <p class="card--description">Print out service gives you convenience if someday
+                you need print data, just edit it all and just print it.</p>
+              <a class="card--link marginLinkThree underline-one" href="">Learn more <span class="arrow">&#8594;</span></a>
+            </div>
+          </div>
+
+          <!-- Card-four! -->
+          <div class="card--item__color--four">
+            <img class="card-image__img-two position" src="img/cards/card_four.png" alt="">
+            <div class="card--item__content">
+              <div class="back-img-four__vector"><img src="img/cards/vector_three.png" alt="Vector"></div>
+              <div class="back-img-four"><img src="img/cards/ellipse_two.png" alt="Vector"></div>
+              <h3 class="heading-h3">Security Code</h3>
+              <p class="card--description">Data Security is one of our best facilities. Allows for your files to be safer. The file can be secured with a code or password that you created, so only you can open the file.</p>
+              <a class="card--link marginLinkFour underline-one" href="">Learn more <span class="arrow">&#8594;</span></a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section-four! -->
+    <section class="section-four">
+      <div class="container">
+        
+        <div class="wrapper">
+
+          <div class="backgr-image-one"><img src="img/main_photo/vector_one.png" alt="Vector"></div>
+
+          <div class="backgr-image-two"><img src="img/main_photo/vector_2.png" alt="Vector"></div>
+
+          <h2 class="heading-h2 h2__section-four">Testimonials</h2>
+          <div class="box-card">
+
+          <!-- Card-one! -->
+          <div class="card-user">
+            <img class="photo-user" src="img/avatars/avatar_2.png" alt="Avatar">
+            <div class="card-user__box-text">
+              <p class="name-user">John Fang</p>
+              <p class="site-user"><a class="link-user" href="">wordfaang.com</a></p>
+              <p class="comment-user">Suspendisse ultrices at diam lectus nullam.</p>
+              <p class="comment-user">Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
+            </div>
+          </div>
+
+          <!-- Card-two! -->
+          <div class="card-user">
+            <img class="photo-user" src="img/avatars/avatar.png" alt="Avatar">
+            <div class="card-user__box-text">
+              <p class="name-user">Hanna Wilson</p>
+              <p class="site-user"><a class="link-user" href="">wordfaang.com</a></p>
+              <p class="comment-user">Suspendisse ultrices at diam lectus nullam.</p>
+              <p class="comment-user">Nisl, sagittis viverra enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam laoreet nulla.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-five">
+      <div class="container">
+        <div class="section-five__wrapper">
+
+          <div class="text-block">
+            <h4 class="heading-h4">Try for free!</h4>
+            <p class="description text-block__widthText">Get limited 1 week free try our features!</p>
+          </div>
+
+          <div class="button-block">
+            <button class="btn--secondary marginTop">Learn more</button>
+            <button class="btn--request">Request Demo <span class="arrow">&#8594;</span></button>
+            </div>
+
+          </div>
+
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer! -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__wrapper">
+      
+        <ul class="footer__list">
+          <li class="logo__title">
+            <svg class="logo__footer" width = "49" hight = "40">
+              <use xlink:href = "img/icons_logo/logo_min.svg#idLogo"></use>
+            </svg>
+            <span class="title__footer animated-text">DataWarehouse</span>
+          </li>
+          <li class="list__city">Warehouse Society, 23 Bahagia Ave Street PRBW 29281</li>
+          <li><a class="list__link fontStyleLink" href="email: info@warehouse.project ">info@warehouse.project</a> 
+          </li>
+          <li><a class="list__tel fontStyleLink" href="tel: 1-232-3434">1-232-3434 (Main)</a></li>
+          <li class="subtitles">© Datawarehouse™, 2020. All rights reserved.
+            Company Registration Number: 21479524.</li>
+        </ul>
+
+          <ul class="footer__list--two">
+            <li class="main__text--list">About</li>
+            <li class="list__item">Profile
+            </li>
+            <li class="list__item">Features</li>
+            <li class="list__item">Careers</li>
+            <li class="list__item">DW News</li>
+          </ul>
+
+          <ul class="footer__list--two">
+            <li class="main__text--list">Help</li>
+            <li class="list__item">Support</li>
+            <li class="list__item">Sign up</li>
+            <li class="list__item">Guide</li>
+            <li class="list__item">Reports</li>
+            <li class="list__item">Q&A</li>
+          </ul>
+        
+        <ul class="footer__list--media">
+          <li class="main__text--list">Social Media</li>
+          <div class="box-social">
+            <li>
+              <a class="icon__link" href="">
+                <svg class="svg__footer svg-one__hover">
+                  <use width = "12" class="fill__footer one-fill__hover" x="18" y="0" xlink:href = "img/icons_logo/facebook.svg#idFacebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="icon__link" href="">
+                <svg class="svg__footer">
+                  <use width = "23" class="fill__footer" x="15" y="0" xlink:href = "img/icons_logo/twitter.svg#idTwitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="icon__link" href="">
+                <svg class="svg__footer svg-three__hover">
+                  <use width = "23" class="fill__footer three-fill__hover" x="13" y="0" xlink:href = "img/icons_logo/instagram.svg#idInsta"></use>
+                </svg>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function myFunction() {
+      const x = document.getElementById("myTopnav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+    </script>
+</body>
+</html>

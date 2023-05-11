@@ -1,0 +1,99 @@
+@use 'helpers' as *;
+
+// Nav-list
+@keyframes moveX {
+  0% {
+    left: 100%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+// Button
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  30% {
+    transform: translateY(-10px);
+    animation-timing-function: ease-in;
+  }
+  70% {
+    transform: translateY(-10px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+// Logo SVG
+#rect1 {
+  animation: rect1Animation 3s ease-in-out 1;
+}
+
+#rect2 {
+  animation: rect2Animation 3s ease-in-out 1;
+}
+
+@keyframes rect1Animation {
+  0%, 50% {
+    height: 20px;
+    y: 15.5;
+  }
+  25%, 75% {
+    height: 35px;
+    y: 0.5;
+  }
+  100% {
+    height: 20px;
+    y: 15.5;
+  }
+}
+
+@keyframes rect2Animation {
+  0%, 50% {
+    height: 35px;
+    y: 0.5;
+  }
+  25%, 75% {
+    height: 20px;
+    y: 15.5;
+  }
+  100% {
+    height: 35px;
+    y: 0.5;
+  }
+}
+
+// Animated-text
+
+@keyframes color-change {
+  0% { 
+    color: $color--heading; 
+  }
+  25% { 
+    color: $color--text; 
+  }
+  50% { 
+    color: $color--violet; 
+  }
+  75% { 
+    color: $color--lavender; 
+  }
+  100% { 
+    color: $color--heading; 
+  }
+}
+
+
+.animated-text {
+  animation-name: color-change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}

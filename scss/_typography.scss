@@ -1,0 +1,237 @@
+@use 'helpers' as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@400;700&display=swap');
+
+.heading-h1 {
+  @include fontHeading (80px, 88px, $color--heading);
+  max-width: 600px;
+}
+
+@media screen and (max-width: 992px) {
+  .heading-h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading-h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+.heading-h2 {
+  @include fontHeading (40px, 52px, $color--heading);
+}
+
+.h2__section-four {
+  color: $color--dark-gray;
+  margin: 0 auto;
+  max-width: 270px;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .h2__section-four {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .h2__section-four {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading-h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .heading-h2 {
+    font-size: 25px;
+  }
+}
+
+.heading-h3 {
+  @include fontHeading (24px, 31px, $color--heading);
+  font-weight: 400;
+}
+
+.description {
+  @include fontText (500, 18px, 29px, $color--dark-gray);
+}
+
+@media screen and (max-width: 992px) {
+  .description {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+}
+
+.card--item__content {
+  .card--description {
+    @include fontText (400, 16px, 26px, $color--dark-gray);
+    max-width: 230px;
+  }
+
+  .card--link {
+    display: block;
+    max-width: 120px;
+    @include fontText (700, 16px, 26px, $color--heading);
+    &:visited {
+      background-color: $color---pink;
+    }
+
+    .arrow {
+      font-size: 19px;
+      color: $color--lavender;
+    }
+  }
+}
+
+.card-user__box-text {
+
+  .name-user {
+    @include fontText (500, 16px, 26px, $color--heading)
+  }
+
+  .link-user {
+    @include fontText (500, 14px, 22px, $color--lavender);
+    letter-spacing: 0.01em;
+    &:focus {
+      color: green;
+    }
+  }
+
+  .comment-user {
+    @include fontText (400, 16px, 26px, $color--dark-gray);
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-user__box-text {
+    .comment-user {
+      font-size: 14px;
+    }
+  }
+}
+
+.section-five {
+  .heading-h4 {
+    @include fontHeading (40px, 52px, $color--heading);
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .text-block__widthText {
+    width: 230px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-five {
+    .heading-h4 {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+    .text-block__widthText {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
+
+.footer {
+  .title__footer {
+    margin-left: 20px;
+    @include fontText (600, 20px, 32px, $color--heading);
+  }
+
+  .list__city {
+    @include fontText (500, 16px, 29px, $color--heading);
+    margin-bottom: 10px;
+  }
+
+  .fontStyleLink {
+    @include fontText (400, 16px, 29px, $color--heading);
+    &:hover {
+      font-size: 18px;
+    }
+  }
+
+  .subtitles {
+    @include fontText (300, 12px, 22px, $color--heading);
+    letter-spacing: 0.01em;
+    max-width: 275px;
+    margin-top: 109px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    .list__city {
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .fontStyleLink {
+      font-size: 15px;
+      margin-left: 40px;
+      text-align: center;
+    } 
+
+    .subtitles { 
+      margin-top: 30px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+
+    .list__tel {
+      margin-left: 70px;
+    }
+  }
+}
+
+.main__text--list {
+  @include fontText (600, 16px, 26px, $color--heading);
+  margin-bottom: 30px;
+}
+
+.list__item {
+  @include fontText (500, 16px, 26px, $color--dark-gray);
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:hover {
+    color: $color--violet;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main__text--list {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .list__item {
+    font-size: 14px;
+  }
+}
+
+
+
+
