@@ -46,9 +46,9 @@
 .btn--request {
   margin-top: 20px;
   @include button (15px 0);
+  @include fontText (500, 18px, 28px, $color--white);
   background-color: $color--white;
   border: 1px solid $color--lavender;
-  color: $color--heading;
   &:hover {
     background-color: $color--lavender;
     color: $color--white;
@@ -217,9 +217,9 @@
 .btn--secondary {
   display: block;
   @include button (15px 0);
+  @include fontText (500, 18px, 28px, $color--white);
   background-color: $color--lavender;
   border: 1px solid $color--lavender;
-  color: $color--white;
   animation: bounce 1s 1s 2;
   &:hover {
     background-color: $color--violet;
